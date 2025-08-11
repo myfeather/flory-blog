@@ -90,6 +90,7 @@ watch(() => page.value?.theme, (theme: any) => {
   bottom: 0;
   z-index: 0;
   overflow: hidden;
+  transform: translateX(10vw) translateY(20vh);
 }
 
 .right-image-pattern img {
