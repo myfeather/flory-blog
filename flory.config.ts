@@ -20,7 +20,7 @@ const floryBlogConfig = {
     favicon: '',
     language: 'zh-CN',
     timezone: 'Asia/Shanghai',
-    url: '', //! TODO 填写博客地址
+    url: 'https://aflory.com', //! TODO 填写博客地址
     githubRepo: '',
     robotsNotIndex: ['/preview', '/previews/*'],
     collections: floryBlogCollections, // !勿动

@@ -28,6 +28,7 @@ const props = defineProps<{ title?: string }>()
   align-items: center;
   background-color: var(--color-navbar-bg);
   padding: 0 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 a {
