@@ -29,6 +29,11 @@ const floryBlogCollections= [
         name: "诗集",
         id: "poem",
         desc: "遐想时随手写的的诗",
+    },
+    {
+        name: "悼词",
+        id: "eulogy",
+        desc: "悼念逝去的亲人",
     }
 ]
 
