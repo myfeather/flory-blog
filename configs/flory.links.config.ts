@@ -2,7 +2,7 @@
 const floryBlogLinks = [
   {
     title: "项目",
-    subTitle: "FeatherD",
+    subTitle: "FeatherDev",
     links: [
       {
         name: "AFeather 一片羽",
@@ -31,8 +31,8 @@ const floryBlogLinks = [
     ]
   },
   {
-    title: "AFeather成员",
-    subTitle: "感谢以下开发组成员对本站的支持",
+    title: "成员",
+    subTitle: "FeatherDev",
     links: [
       {
         name: "Makabaka1880",

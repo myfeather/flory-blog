@@ -2,7 +2,7 @@
   <div class="links-container">
     <div class="hero">
       <h1>友情链接</h1>
-      <p>感谢所有支持我们的朋友</p>
+      <p></p>
     </div>
 
     <div v-for="category in links" :key="category.title" class="category-section">
