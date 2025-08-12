@@ -59,6 +59,7 @@ const linkProps = computed(() => ({
   padding: 1.5rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
 }
 
 .author-card:hover {

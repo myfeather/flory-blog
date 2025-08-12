@@ -29,6 +29,7 @@ const props = defineProps<{ title?: string }>()
   background-color: var(--color-navbar-bg);
   padding: 0 2rem;
   transition: all 0.2s ease-in-out;
+  user-select: none;
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 
 a:hover {
   /* border: 2px solid var(--color-navbar-link-border); */
-  color: var(--color-link-hover);
+  color: var(--color-navbar-link-hover);
 }
 
 .nav-right {

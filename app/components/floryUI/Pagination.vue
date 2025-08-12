@@ -100,6 +100,7 @@ function changePage(page: number) {
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
+  user-select: none;
 }
 
 .pagination-button {

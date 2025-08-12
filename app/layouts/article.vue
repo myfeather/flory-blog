@@ -18,7 +18,7 @@
         height: `${squareSize}px`
       }"
     >
-      <img :src="rightImage" alt="Right pattern image" />
+      <img :src="rightImage" alt="Right pattern image" draggable="false"/>
     </div>
   </div>
 </template>
@@ -64,6 +64,8 @@ const squareSize = computed(() => {
 .content {
   width: 100%;
   height: 100%; /* Adjust height to fill the remaining space */
+  position: relative;
+  z-index: 1;
 }
 
 .right-image-pattern {
@@ -79,5 +81,6 @@ const squareSize = computed(() => {
   height: 100%;
   object-fit: contain;
   object-position: center;
+  user-select: none;
 }
 </style>

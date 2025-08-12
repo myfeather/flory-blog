@@ -1,5 +1,5 @@
 import floryBlogCollections from './configs/flory.collections.config'
-import floryBlogFriendlyLinks from './configs/flory.friendlylinks.config'
+import floryBlogFriendlyLinks from './configs/flory.links.config'
 
 //? 博客配置
 const floryBlogConfig = {

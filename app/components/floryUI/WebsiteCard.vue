@@ -57,6 +57,7 @@ const props = defineProps<{
   text-decoration: none;
   color: inherit;
   display: block;
+  user-select: none;
 }
 
 .website-card {

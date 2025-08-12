@@ -12,11 +12,11 @@ const navItems = [
       route: "/author",
       icon: "material-symbols:account-circle"
     },
-    // {
-    //   name: "友链",
-    //   route: "/link",
-    //   icon: "material-symbols:link-rounded",
-    // },
+    {
+      name: "友链",
+      route: "/link",
+      icon: "material-symbols:link-rounded",
+    },
 ];
 
 export default navItems;
