@@ -1,6 +1,6 @@
 <template>
     <div class="collection-header">
-        <h1>集合</h1>
+        <h1>合集</h1>
     </div>
     <div class="collections-list">
             <FoliageCard

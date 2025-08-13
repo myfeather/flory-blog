@@ -11,7 +11,8 @@
                 :subtitle="`Updated: ${article.updateTime}`"
                 :desc="article.description"
                 :to="article.path"
-            />
+            >
+        </FoliageCard>
         </template>
     </div>
 </template>

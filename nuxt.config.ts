@@ -28,8 +28,5 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/x-icon", href: floryBlogConfig.favicon },
       ],
     },
-    // TODO 在这个bug被修复以后添加动画，详见 https://nuxt.com.cn/docs/getting-started/transitions#%E5%B7%B2%E7%9F%A5%E9%97%AE%E9%A2%98
-    // pageTransition: { name: 'page', mode: 'out-in' },
-    // layoutTransition: { name: 'layout', mode: 'out-in' }
   },
 })

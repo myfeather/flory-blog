@@ -89,10 +89,10 @@
   --color-navbar-bg: #f3e0e0;
 
   /* 导航栏链接颜色 */
-  --color-navbar-link: #5a4b4b;
+  --color-navbar-link: #726363;
 
   /* 导航栏链接悬停颜色 */
-  --color-navbar-link-border: #726363;
+  --color-navbar-link-hover: #ce6982;
 
   /* 标签背景色 */
   --color-tag-bg: #f6d6d6;

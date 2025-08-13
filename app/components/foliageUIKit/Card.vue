@@ -6,6 +6,12 @@
                 <p v-if="subtitle" class="card-subtitle">{{ subtitle }}</p>
             </div>
             <p v-if="desc" class="card-desc">{{ desc }}</p>
+            <div class="card-content">
+                <slot/>
+            </div>
+            <div v-if="$slots.footer" class="card-footer">
+                <slot name="footer"/>
+            </div>
         </div>
     </component>
 </template>
@@ -89,6 +95,9 @@ const linkProps = computed(() => {
     transition: all 0.2s ease;
     user-select: none;
 }
+.foliage-card:hover {
+    background-color: var(--color-card-hover-bg);
+}
 
 .card-title {
     font-size: 1.25rem;
@@ -125,5 +134,22 @@ div.card-wrapper {
 
 div.card-wrapper .foliage-card {
     cursor: default;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-footer {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    display: flex;
+    gap: 1rem;
 }
 </style>
