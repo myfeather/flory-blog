@@ -118,6 +118,21 @@
   /* 提示框文字 */
   --color-tooltip-text: #ffffff;
 
+  /* 代码块背景 */
+  --color-code-bg: #f7e8eb;
+
+  /* 引用边框色 */
+  --color-quote-border: #cbb4d4;
+
+  /* 引用文本色 */
+  --color-quote-text: #7c5f65;
+
+  /* 表格边框色 */
+  --color-table-border: #e4dada;
+
+  /* 表头背景色 */
+  --color-table-header-bg: #f9dfe5;
+
   /* 警告背景 */
   --color-warning-bg: #ffe5b4;
 

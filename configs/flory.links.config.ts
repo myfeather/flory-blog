@@ -50,7 +50,7 @@ const floryBlogLinks = [
       },
       {
         name: "minc_nice_100 ",
-        siteName: "minc_nice_100的博客",
+        siteName: "Ited Blog",
         desc: "你已经很棒了！",
         url: "https://itedev.com/",
         type: "blog",
@@ -69,6 +69,12 @@ const floryBlogLinks = [
         url: "https://blog.zhilu.site/",
         type: "blog",
       },
+      {
+        name: "eastwind",
+        siteName: "Eastwind",
+        desc: "东风不与周郎便",
+        url: "https://1wind.cn/",
+      }
     ]
   },
   {
