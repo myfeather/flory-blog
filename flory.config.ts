@@ -1,5 +1,6 @@
 import floryBlogCollections from './configs/flory.collections.config'
-import floryBlogFriendlyLinks from './configs/flory.links.config'
+import floryBlogLinks from './configs/flory.links.config'
+import floryBlogAuthors from './configs/flory.authors.config'
 
 //? 博客配置
 const floryBlogConfig = {
@@ -21,10 +22,20 @@ const floryBlogConfig = {
     language: 'zh-CN',
     timezone: 'Asia/Shanghai',
     url: 'https://aflory.com', //! TODO 填写博客地址
-    githubRepo: '',
-    robotsNotIndex: ['/preview', '/previews/*'],
-    collections: floryBlogCollections, // !勿动
-    friendlyLinks: floryBlogFriendlyLinks, //! 勿动
+    highlight: {
+        languages: ['json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml', 'sql', 'swift'],
+        theme: {
+            // Default theme (same as single string)
+            default: 'github-light',
+            // Theme used if `html.dark`
+            dark: 'github-dark',
+            // Theme used if `html.sepia`
+            sepia: 'monokai'
+          },
+    },
+    collections: floryBlogCollections, //!勿动
+    links: floryBlogLinks, //! 勿动
+    authors: floryBlogAuthors, //! 勿动
 }
 
 export default floryBlogConfig

@@ -12,7 +12,8 @@
 </template>
 
 <script setup lang="ts">
-import floryBlogAuthors from '@@/configs/flory.authors.config'
+import floryBlogConfig from '@@/flory.config'
+const floryBlogAuthors = floryBlogConfig.authors
 import AuthorCard from '@/components/floryUI/AuthorCard.vue'
 </script>
 

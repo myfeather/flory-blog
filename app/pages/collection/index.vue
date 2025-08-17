@@ -15,7 +15,8 @@
 
 <script setup lang="ts">
 import FoliageCard from '@/components/foliageUIKit/Card.vue'
-import floryBlogCollections from '@@/configs/flory.collections.config'
+import floryBlogConfig from '@@/flory.config'
+const floryBlogCollections = floryBlogConfig.collections
 </script>
 
 <style scoped>

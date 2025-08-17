@@ -21,7 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import links from '@@/configs/flory.links.config'
+import floryBlogConfig from '@@/flory.config'
+const links = floryBlogConfig.links
 import WebsiteCard from '@/components/floryUI/WebsiteCard.vue'
 </script>
 
