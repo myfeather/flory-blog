@@ -55,15 +55,23 @@ const squareSize = computed(() => {
 </script>
 
 <style lang="css" scoped>
+.article-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .nav-bar {
   width: 100%;
   height: 3rem;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 10;
 }
+
 .content {
+  flex: 1;
   width: 100%;
-  height: 100%; /* Adjust height to fill the remaining space */
   position: relative;
   z-index: 1;
 }

@@ -20,12 +20,22 @@ import config from '@@/flory.config';
 
 <style lang="css" scoped>
 
+.default-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .nav-bar {
   width: 100%;
   height: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
+
 .content {
+  flex: 1;
   width: 100%;
-  height: 100%; /* Adjust height to fill the remaining space */
 }
 </style>
