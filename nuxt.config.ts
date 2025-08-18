@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     { path: "~/components/floryUI", prefix: "Flory" },
     "~/components",
   ],
-  css: ["~/assets/main.css"],
+  css: ["~/assets/main.scss"],
   content: {
     build: {
       markdown: {
