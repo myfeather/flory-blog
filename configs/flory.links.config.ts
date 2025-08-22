@@ -73,7 +73,8 @@ const floryBlogLinks = [
         name: "eastwind",
         siteName: "Eastwind",
         desc: "东风不与周郎便",
-        url: "https://1wind.cn/",
+        url: "https://blog.1wind.cn/",
+        type: "blog",
       }
     ]
   },

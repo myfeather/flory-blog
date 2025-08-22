@@ -1,6 +1,7 @@
 import floryBlogCollections from './configs/flory.collections.config'
 import floryBlogLinks from './configs/flory.links.config'
 import floryBlogAuthors from './configs/flory.authors.config'
+import floryBlogFooter from './configs/flory.footer.config'
 
 //? 博客配置
 const floryBlogConfig = {
@@ -36,6 +37,7 @@ const floryBlogConfig = {
     collections: floryBlogCollections, //!勿动
     links: floryBlogLinks, //! 勿动
     authors: floryBlogAuthors, //! 勿动
+    footer: floryBlogFooter, //! 勿动
 }
 
 export default floryBlogConfig

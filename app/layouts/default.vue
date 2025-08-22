@@ -1,25 +1,23 @@
 <template>
   <div class="default-layout">
     <div class="nav-bar">
-      <FoliageNav
-        :title="config?.title"
-      />
+      <FoliageNav :title="config?.title" />
     </div>
     <div class="content">
       <FoliageSafeArea>
         <slot />
       </FoliageSafeArea>
     </div>
+    <FloryFooter/>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { FoliageNav, FoliageSafeArea } from '#components';
+import { FoliageNav, FoliageSafeArea, FloryFooter } from '#components';
 import config from '@@/flory.config';
 </script>
 
 <style lang="css" scoped>
-
 .default-layout {
   display: flex;
   flex-direction: column;
@@ -37,5 +35,6 @@ import config from '@@/flory.config';
 .content {
   flex: 1;
   width: 100%;
+  min-height: 100vh;
 }
 </style>
