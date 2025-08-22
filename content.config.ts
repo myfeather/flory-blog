@@ -16,6 +16,7 @@ export default defineContentConfig({
         collection: z.string(),
         author: z.array(z.number()),
         theme: z.object({}).optional(),
+        rawbody: z.string()
       })
     })
   }
