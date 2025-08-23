@@ -18,6 +18,7 @@
             <SearchResults 
                 :results="searchResults"
                 :search-query="searchValue"
+                :get-highlighted-matches="getHighlightedMatches"
             />
         </template>
         <FloryPagination
@@ -44,7 +45,7 @@ const totalPages = ref(1);
 
 // 搜索相关
 const searchValue = ref('');
-const { searchResults, performSearch } = useSearch();
+const { searchResults, performSearch, getHighlightedMatches } = useSearch();
 
 // 处理搜索
 watch(() => searchValue.value, async (query) => {

@@ -9,7 +9,15 @@
                 :subtitle="`Updated: ${item.updateTime}`"
                 :desc="item.description"
                 :to="item.path"
-            />
+            >
+                <template v-if="props.getHighlightedMatches && props.getHighlightedMatches(item).length > 0" #footer>
+                    <div class="match-snippet">
+                        ...{{ props.getHighlightedMatches(item)[0].text.substring(0, props.getHighlightedMatches(item)[0].matchStart) }}
+                        <mark>{{ props.getHighlightedMatches(item)[0].text.substring(props.getHighlightedMatches(item)[0].matchStart, props.getHighlightedMatches(item)[0].matchEnd + 1) }}</mark>
+                        {{ props.getHighlightedMatches(item)[0].text.substring(props.getHighlightedMatches(item)[0].matchEnd + 1) }}...
+                    </div>
+                </template>
+            </FoliageCard>
         </template>
 
         <template v-if="groupedResults.authors.length > 0">
@@ -48,8 +56,14 @@ const props = defineProps<{
         updateTime?: string
         path: string
         type: 'article' | 'collection' | 'author'
+        matches?: any[]
     }>
     searchQuery: string
+    getHighlightedMatches: (item: any) => Array<{
+        text: string
+        matchStart: number
+        matchEnd: number
+    }> | undefined
 }>()
 
 const groupedResults = computed(() => ({
@@ -70,5 +84,18 @@ const groupedResults = computed(() => ({
     color: var(--color-text-muted);
     text-align: center;
     margin: 2rem 0;
+}
+
+.match-snippet {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.match-snippet mark {
+    background-color: rgba(255, 213, 0, 0.3);
+    color: inherit;
+    padding: 0 0.1em;
 }
 </style>

@@ -69,6 +69,7 @@ export function useSearch() {
                 { name: 'rawbody', weight: 0.3 }
             ],
             includeScore: true,
+            includeMatches: true,
             threshold: 0.4,
             ignoreLocation: true,
             minMatchCharLength: 2
@@ -82,12 +83,35 @@ export function useSearch() {
 
         if (fuse.value) {
             const results = fuse.value.search(query);
-            searchResults.value = results.map(r => r.item);
+            searchResults.value = results.map(r => ({
+                ...r.item,
+                matches: r.matches
+            }));
         }
     }
 
     return {
         searchResults,
-        performSearch
+        performSearch,
+        getHighlightedMatches: (item: any) => {
+            if (!item.matches) return [];
+            
+            const contentMatch = item.matches.find((match: any) => 
+                match.key === 'content' || match.key === 'rawbody'
+            );
+            
+            if (!contentMatch) return [];
+            
+            const [start, end] = contentMatch.indices[0];
+            const text = contentMatch.value || '';
+            const before = Math.max(0, start - 20);
+            const after = Math.min(text.length, end + 20);
+            
+            return [{
+                text: text.substring(before, after),
+                matchStart: start - before,
+                matchEnd: end - before
+            }];
+        }
     };
 }
