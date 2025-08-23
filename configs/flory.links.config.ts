@@ -54,7 +54,14 @@ const floryBlogLinks = [
         desc: "你已经很棒了！",
         url: "https://itedev.com/",
         type: "blog",
-      }
+      },
+      {
+        name: "Aporia",
+        siteName: "Gloweve",
+        desc: "Be the change that you want in the world.",
+        url: "https://gloweve.com/",
+        type: "blog",
+      },
 
     ]
   },
@@ -79,8 +86,18 @@ const floryBlogLinks = [
     ]
   },
   {
-
-  }
+    title:"朋友们",
+    subTitle:"我们的精神源泉",
+    links: [
+      {
+        name: "Tab",
+        siteName: "Tab’s Blog",
+        desc: "Hi，我是Tab，一个在代码世界苦苦挣扎但乐在其中的编导生。",
+        url: "https://tabyion.github.io/",
+        type: "blog",
+      },
+    ],
+  },
 
 ]
 
