@@ -4,7 +4,13 @@ import floryBlogConfig from "./flory.config";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '1999-01-01',
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   components: [
     { path: "~/components/foliageUIKit", prefix: "Foliage" },
     { path: "~/components/floryUI", prefix: "Flory" },
