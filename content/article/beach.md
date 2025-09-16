@@ -5,15 +5,6 @@ collection: poem
 author: [1]
 createTime: 2025-08-17
 updateTime: 2025-08-17
-theme: {
-    colorHeading: "#c3b8feff",
-    colorText: "#f9dfe5",
-    colorBackground: "#254498",
-    colorNavbarBg: "#254498",
-    colorNavbarLink: "#f9dfe5",
-    colorNavbarLinkHover: "#ac5fca",
-    rightImage: "/star.png"
-}
 ---
 
 当黄昏的朦胧漫过记忆的沙滩时，

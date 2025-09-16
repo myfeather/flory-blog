@@ -37,12 +37,12 @@ watch(() => page.value?.theme, (theme: any) => {
     style: [{
       innerHTML: `
         :root {
-          --color-heading: ${theme.colorHeading};
-          --color-text: ${theme.colorText};
-          --color-background: ${theme.colorBackground};
-          --color-navbar-bg: ${theme.colorNavbarBg};
-          --color-navbar-link: ${theme.colorNavbarLink};
-          --color-navbar-link-hover: ${theme.colorNavbarLinkHover};
+          --color-heading: ${theme.colorHeading} !important;
+          --color-text: ${theme.colorText} !important;
+          --color-background: ${theme.colorBackground} !important;
+          --color-navbar-bg: ${theme.colorNavbarBg} !important;
+          --color-navbar-link: ${theme.colorNavbarLink} !important;
+          --color-navbar-link-hover: ${theme.colorNavbarLinkHover} !important;
         }
       `,
       tagPriority: 'high'
