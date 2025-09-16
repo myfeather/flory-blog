@@ -5,14 +5,6 @@ collection: poem
 author: [1]
 createTime: 2025-09-14
 updateTime: 2025-09-14
-theme: {
-    colorHeading: "#716253ff",
-    colorText: "#8D7A67",
-    colorBackground: "#EAE4E3",
-    colorNavbarBg: "#eae4e362",
-    colorNavbarLink: "#8D7A67",
-    colorNavbarLinkHover: "#716253ff",
-}
 ---
 
 
